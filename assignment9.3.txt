@@ -1,4 +1,4 @@
-?1)What is meant by FlumeNG ?
+1)What is meant by FlumeNG ?
 
 Flume is a distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log data.
 It has a simple and flexible architecture based on streaming data flows. 
