@@ -1,0 +1,38 @@
+?1)What is meant by FlumeNG ?
+
+Flume is a distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log data.
+It has a simple and flexible architecture based on streaming data flows. 
+It is robust and fault tolerant with reliable mechanisms and many failover and recovery mechanisms. 
+It uses a simple extensible data model that allows for online analytic applications.
+This work currently resides on a separate branch by the name flume-728 and is informally referred to as Flume NG.
+
+2)Can Flume provides 100 % reliability to the data flow?
+
+Apache Flume provides end to end reliability because of its transactional approach in data flow.
+Flume uses channel-based transactions to guarantee reliable message delivery.
+This channel is responsible to pass reliably from end to end flow.
+
+3)Can Flume can distributes data to multiple destinations? 
+
+Flume supports the flow from one source to multiple channel and multiple destionations.
+The dataflow from one source to multiple channels is known as fan-out flow.
+This dataflow process is achieved through multiplexing.
+
+4)Explain about the different channel types in Flume. And which channel type is faster?
+
+The different channel types in Flume:
+
+MEMORY Channel:Events are read from the source into memory and passed to the sink.
+JDBC Channel:It stores the events in an embedded Derby database.
+FILE Channel:It writes the contents to a file on the file system after reading the event from a source. 
+MEMORY Channel is the fastest channel among these but has the risk of data loss. 
+
+
+
+
+
+
+
+
+
+
